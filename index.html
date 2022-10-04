@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- calculator -->
+      <div class="calculator">
+        <!-- display -->
+        <div id="history-content">
+          <i class="bi bi-x" onclick="hiddenHistory()"></i>
+        </div>
+        <div class="calulator display">
+          <button class="history" onclick="showHistory()" ondblclick="">
+            <i class="bi bi-clock-history"></i>
+          </button>
+          <input type="text" id="lastop" readonly />
+          <input type="text" id="display" readonly />
+        </div>
+        <div class="calulator keys">
+          <!-- operations keys -->
+          <button class="operations" data-op="AC">AC</button>
+          <button class="operations" data-op="DEL">DEL</button>
+          <button class="mathOperations" data-mathop="percen">%</button>
+          <button class="mathOperations" data-mathop="divi">/</button>
+          <button class="numbers" data-number="7">7</button>
+          <button class="numbers" data-number="8">8</button>
+          <button class="numbers" data-number="9">9</button>
+          <button class="mathOperations" data-mathop="multi">*</button>
+          <button class="numbers" data-number="4">4</button>
+          <button class="numbers" data-number="5">5</button>
+          <button class="numbers" data-number="6">6</button>
+          <button class="mathOperations" data-mathop="sub">-</button>
+          <button class="numbers" data-number="1">1</button>
+          <button class="numbers" data-number="2">2</button>
+          <button class="numbers" data-number="3">3</button>
+          <button class="mathOperations" data-mathop="add">+</button>
+          <button class="numbers" data-number="0">0</button>
+          <button class="numbers" data-number=".">.</button>
+          <button class="mathOperations" data-mathop="equals">=</button>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="./script.js"></script>
+  </body>
+</html>
